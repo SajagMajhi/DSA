@@ -1,0 +1,42 @@
+1) Declare and define variables i,front = 0,rear = -1,item,size 
+2) Input "size" from the user and define array Arr[size]
+
+3) For enqueue operation
+   if (rear = size-1) then
+	display "Queue Overflow"
+   else
+	rear = rear + 1
+      	Read "item" from user
+	Arr[rear] = item
+
+4) For further enqueue operation repeat step 3)
+
+5) For dequeue operation
+   if(rear < front) then
+	display "Queue Underflow"
+   else
+	display "Dequeued item = ", Arr[front]
+	front = front + 1
+	
+6) For further dequeue operation repeat step 5)
+
+7) For traverse operation
+   
+   if(rear < front)
+	display "Queue Underflow"
+   else
+	Repeat
+	  i = front 
+	  display Arr[i]
+ 	  i = i + 1
+	Until i = rear+1
+ 
+8) For displaying front element
+
+   if(rear < front)
+	display "Queue Underflow"
+   else
+ 	display Arr[front]
+
+
+   	

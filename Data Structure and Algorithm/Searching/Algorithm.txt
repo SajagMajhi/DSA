@@ -1,0 +1,16 @@
+1) Declare necessary variables l,r,mid,data and array Arr[size]
+2) Define l=0, r=size-1, mid = l+(l-r)/2
+3) Input "data" from the user
+4) 
+   REPEAT
+   if(data = Arr[mid]) then
+     return "mid" as position of the element
+     goto step 6)
+   else if(data < Arr[mid])
+     r = mid-1
+   else
+     l = mid+1
+   UNTIL l <= r
+
+5) return -1 i.e data not found
+6) stop

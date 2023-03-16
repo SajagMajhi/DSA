@@ -1,0 +1,13 @@
+START
+Procedure Hanoi(disks,source,auxiliary,destination)
+	
+	IF(disks = 1)
+	  Move disk from source to destination
+	ELSE
+	  Hanoi(disks-1,source,destination,auxiliary)
+	  Move disk from source to destination
+	  Hanoi(disks-1,auxiliary,source,destination)
+	END IF
+
+END Procedure
+STOP

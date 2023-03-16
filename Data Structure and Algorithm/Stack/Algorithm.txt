@@ -1,0 +1,39 @@
+1) Declare and define i,top = -1,bottom = 0,size,item
+2) Input "size" from user and define array Arr[size]
+
+3) For PUSH operation
+   if(top = size-1)
+	display "Stack Overflow"
+   else
+  	top = top + 1
+	Read "item" from user
+	Arr[top] = item
+
+4) Repeat step 3) for further PUSH operation
+
+5) For POP operation
+    if(top = -1)
+	display "Stack Underflow"
+    else
+	display "Popped item = ", Arr[top]
+	top = top - 1
+
+6) Repeat step 5) for further POP operation
+
+7) For Traverse opeation
+     if(top = -1)
+	display "Stack Underflow"
+     else
+	Repeat
+	  i = top 
+	  display Arr[i]
+	  i = i - 1
+  	Until i != -1
+
+8) For display Top of Stack(TOS) operation
+     if(top = -1)
+	display "Stack Underflow"
+     else
+	display "TOS = ",Arr[top]
+
+	
